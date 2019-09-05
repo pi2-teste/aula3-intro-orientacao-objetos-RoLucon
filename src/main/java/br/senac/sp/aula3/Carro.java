@@ -19,19 +19,25 @@ public class Carro {
     public Carro() {
     }
     
-    public void descreve(){
-        String aux = "";
-        if(!fabricante.equals("")){
-            aux += "Um " + fabricante;
+    public String descreve(){
+        boolean flag = false; 
+        String aux = "Um";
+        if(fabricante != null){
+            aux += fabricante;
+            flag = true;
         }
-        if(!modelo.equals("")){
+        if(modelo!= null){
             aux += " " + modelo;
+            flag = true;
         }
-        if(!cor.equals("")){
-            aux += " de cor " + cor;
+        if(cor != null){
+            aux += " na cor " + cor;
         }
-        System.out.println(aux);
-        
+        if(flag){
+            return  aux;
+        }else{
+            return "Um carro";
+        }
     }
     
     public String getFabricante() {
