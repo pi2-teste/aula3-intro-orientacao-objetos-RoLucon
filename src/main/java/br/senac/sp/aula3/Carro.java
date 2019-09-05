@@ -16,8 +16,7 @@ public class Carro {
     private String modelo;
     private int velocidade;
 
-    public Carro(String color) {
-        cor = color;
+    public Carro() {
     }
     
     public void descreve(){
