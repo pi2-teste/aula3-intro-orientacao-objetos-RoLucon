@@ -99,6 +99,13 @@ public class Main {
         //testar_gasolina1();
         //testar_gasolina2();
         //testar_max_gasolina();
+        Carro carroA = new Carro();
+        carroA.setModelo("T-Cross");
+        Carro carroB = new Carro();
+        carroB.setModelo("Tiguan");
+        carroB.setCor("vinho");
+        JOptionPane.showMessageDialog(null, carroB.getModelo() + " - " 
+                + carroB.getCor());
     }
     
 }
