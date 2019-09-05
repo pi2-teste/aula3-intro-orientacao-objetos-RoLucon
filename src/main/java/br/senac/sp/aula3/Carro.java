@@ -20,6 +20,10 @@ public class Carro {
 
     public Carro() {
     }
+
+    public Carro(int max_gasolina) {
+        this.max_gasolina = max_gasolina;
+    }
     
     public String descreve(){
         boolean flag = false; 
