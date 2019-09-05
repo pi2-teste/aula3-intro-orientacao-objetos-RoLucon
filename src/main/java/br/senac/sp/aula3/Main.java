@@ -52,7 +52,7 @@ public class Main {
         System.out.println("Parabéns, o teste da descrição está correto!");
     }
 
-/*    
+    
     public static void testar_gasolina1() {
         Carro carro1 = new Carro();
         assertEqual(carro1.getGasolina(), 20);
@@ -60,8 +60,8 @@ public class Main {
         assertEqual(carro1.getGasolina(), 30);
         System.out.println("Parabéns, o teste 1 da gasolina está correto!");
     }
-*/
-/*  
+
+ 
     public static void testar_gasolina2() {
         Carro carro1 = new Carro();
         assertEqual(carro1.getGasolina(), 20);
@@ -71,7 +71,7 @@ public class Main {
         assertEqual(carro1.getGasolina(), 40);
         System.out.println("Parabéns, o teste 2 da gasolina está correto!");
     }
-*/
+
 /*    
     public static void testar_max_gasolina() {
         Carro carro1 = new Carro(30);
@@ -103,8 +103,8 @@ public class Main {
                 + carroB.getCor());
         testar_atributos();
         testar_descricao();
-        //testar_gasolina1();
-        //testar_gasolina2();
+        testar_gasolina1();
+        testar_gasolina2();
         //testar_max_gasolina();
         
     }

@@ -15,6 +15,8 @@ public class Carro {
     private String cor;
     private String modelo;
     private int velocidade;
+    private int gasolina = 20;
+    private int max_gasolina = 40;
 
     public Carro() {
     }
@@ -37,6 +39,13 @@ public class Carro {
             return  aux;
         }else{
             return "Um carro";
+        }
+    }
+    
+    public void abastece(int value){
+        gasolina += value;
+        if(gasolina > max_gasolina){
+            gasolina = max_gasolina;
         }
     }
     
@@ -80,6 +89,14 @@ public class Carro {
         this.velocidade = velocidade;
     }
     
+     public int getGasolina() {
+        return gasolina;
+    }
+
+    public void setGasolina(int gasolina) {
+        this.gasolina = gasolina;
+    }
+    
     private String formataTextoUpper(String txt){
         String aux = txt.substring(0,1).toUpperCase()+txt.substring(1);
     
@@ -90,5 +107,13 @@ public class Carro {
         String aux = txt.toLowerCase();
     
     return aux;
+    }
+
+    public int getMax_gasolina() {
+        return max_gasolina;
+    }
+
+    public void setMax_gasolina(int max_gasolina) {
+        this.max_gasolina = max_gasolina;
     }
 }
